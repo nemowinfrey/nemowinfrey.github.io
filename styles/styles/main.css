@@ -1,19 +1,19 @@
 body {
-    front-family:Arial, Helvetica, Sans-serif;
-    front-size: 10%
+    font-family:Arial, Helvetica, Sans-serif;
+    font-size: 10%;
     margin-left: 10px;
 }
 a:hover, a:focus {
-    front-style: italic;
+    font-style: italic;
     color: red;
 }
 header h1 {
-    front-size: 175%;
+    font-size: 175%;
     color: limegreen;
     text-indent: 30px;
 }
 header h2 {
-    front-size: 130%;
+    font-size: 130%;
     color: #800000;
     text-indent: 30px;
 }
