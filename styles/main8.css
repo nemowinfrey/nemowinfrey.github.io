@@ -14,11 +14,14 @@ header h1 {
 }
 header h2 {
     font-size: 130%;
-    color: #800000;
+    color: #000000;
     text-indent: 30px;
 }
 header img{
     float: left;
+}
+.shadow{
+    text-shadow: 2px 2px 2px rgb(44, 255, 16);
 }
 main {
     clear: left;
