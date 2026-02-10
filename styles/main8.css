@@ -53,8 +53,22 @@ footer p.copyright {
 }
 main h3{
     Margin: 1.em 2 em 1.5em;
-    border: 5px daashed blue;
+    border: 5px daashed black;
     border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
+}
+main nav {
+    margin: 1.5em 2em 1.5em;
+    border: 5px dashed limegreen;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 0.5em;
+}
+main div.contact {
+    margin: 1.5em 2em 0 2em;
+    border: 5px dotted black;
+    border-radiurs: 20px;
     box-shadow: 3px 3px 4px 4px red;
     padding: 1em;
 }
