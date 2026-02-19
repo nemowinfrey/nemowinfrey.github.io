@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%)
+    background-image: linear-gradient(to bottom, white 0%, #ff0000 100%)
 }
 body {
     font-family:Arial, Helvetica, Sans-serif;
@@ -24,7 +24,7 @@ header {
 }
 header h1 {
     font-size: 175%;
-    color: limegreen;
+    color: gray;
     text-indent: 30px;
 }
 header h2 {
@@ -36,7 +36,7 @@ header img{
     float: left;
 }
 .shadow{
-    text-shadow: 2px 2px 2px rgb(44, 255, 16);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 main {
     clear: left;

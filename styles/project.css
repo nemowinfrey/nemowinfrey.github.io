@@ -18,7 +18,7 @@ body {
 a:hover, a:focus {
     font-style: italic;
     color: red;
-    border: 3px limegreen;
+    border: 3px hotpink;
     border-style: dotted solid;
 }
 header {
@@ -26,7 +26,7 @@ header {
 }
 header h1 {
     font-size: 175%;
-    color: limegreen;
+    color: grey;
     text-indent: 30px;
 }
 header h2 {
@@ -38,7 +38,7 @@ header img{
     float: left;
 }
 .shadow{
-    text-shadow: 2px 2px 2px rgb(44, 255, 16);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 article {
     clear: left;
@@ -66,7 +66,7 @@ article p::first-letter {
 aside {
     width: 20%;
     float: right;
-    background-color: #51ff00
+    background-color: #fd0101
 }
 footer {
     clear: both;
