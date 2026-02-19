@@ -18,7 +18,7 @@ body {
 a:hover, a:focus {
     font-style: italic;
     color: red;
-    border: 3px hotpink;
+    border: 3px black;
     border-style: dotted solid;
 }
 header {
@@ -26,7 +26,7 @@ header {
 }
 header h1 {
     font-size: 175%;
-    color: grey;
+    color: red;
     text-indent: 30px;
 }
 header h2 {
