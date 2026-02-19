@@ -27,13 +27,14 @@ header h1 {
     color: black;
     text-indent: 30px;
 }
-header h2 {Q
+header h2 {
     font-size: 130%;
     color: #000000;
     text-indent: 30px;
 }
 header img{
     float: left;
+    margin-left: 2em;
 }
 .shadow{
     text-shadow: 2px 2px 2px rgb(255, 0, 0);
@@ -55,8 +56,8 @@ footer p.copyright {
     font-size: 80%;
 }
 main h3{
-    Margin: 3em 2em 1.5em;
-    border: 5px daashed black;
+    margin: 3em 2em 1.5em;
+    border: 5px dashed black;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px red;
     padding: 1em;
