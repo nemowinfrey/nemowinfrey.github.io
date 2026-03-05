@@ -49,6 +49,7 @@ article {
     column-rule: 2px dotted black;
     column-gap: 2em;
     margin-left: 2em;
+    border-top: 2px black;
 }
 article h3 {
     column-span: all;
