@@ -11,7 +11,7 @@ body {
     padding: 20px;
     border: 2px solid black;
     border-radius: 20px;
-    box-shadow: 5px 5px 0 0;
+    box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: blue;
+    background-color: red;
     border-bottom: 2px solid black; /* horizontal line under nav */
 }
 
@@ -34,18 +34,20 @@ body {
     padding: 1em 0;
     text-align: center;
     text-decoration: none;
-    background-color: blue;
+    background-color: red;
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;
+    border-right: 2px solid black;
 }
 
 #nav_menu ul li a.current {
-    color: yellow;
+    color: black;
+    background-color: white;
 }
 
 #nav_menu ul li a:hover {
-    background-color: navy;
+    background-color: black;
+    color: white;
 }
 
 #nav_menu::after {
@@ -89,11 +91,11 @@ aside {
     position: fixed;
     right: 20px;
     top: 150px;
-    background-color: #ffffff;
+    background-color: white;
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 3px 3px 0 0;
+    box-shadow: 3px 3px 0 0 black;
 }
 
 /* LIST STYLES TO MATCH WORD DOC */
