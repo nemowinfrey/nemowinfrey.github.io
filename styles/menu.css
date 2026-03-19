@@ -1,35 +1,81 @@
-nav_menu ul { 
-    list-style-type: none; 
+nav_menu ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden; 
+    background-color: #333; 
 }
 
-nav_menu ul li { 
-    float: left; 
+nav_menu li {
+    float: left;
 }
 
-nav_menu ul li a {
-    text-align: center;
+nav_menu li a {
     display: block;
-    width: 160px; 
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: blue; 
     color: white;
-    font-weight: bold;
-    border-right: 2px solid white; 
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
-nav_menu ul li a.lastitem { 
-    border-right: none; 
+nav_menu li a:hover, #nav_menu li a:focus {
+    background-color: #000;
 }
 
-nav_menu ul li a.current { 
-    color: yellow; 
+nav_menu a.current {
+    color: yellow;
 }
+
+main {
+    width: 95%;
+    margin: 20px auto;
+    overflow: hidden; 
+}
+
+article {
+    width: 70%;
+    float: left;
+    padding-right: 2%;
+}
+
+aside {
+    width: 25%;
+    float: right;
+    background-color: #f9f9f9; 
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
 aside ol {
     list-style-type: upper-roman;
+    margin-bottom: 20px;
 }
+
 aside ul {
     list-style-type: square;
+}
+
+aside a {
+    text-decoration: none;
+    color: #0000EE;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+article h1 {
+    font-size: 200%;
+    margin-top: 0;
+}
+
+article h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+article p {
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
