@@ -1,95 +1,92 @@
-/* --- Navigation Menu (Corrected for Slide 26) --- */
-#nav_menu ul { /* Added # */
+/* --- 4. Navigation Menu Bar (Slide 26) --- */
+#nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
-    background-color: blue; /* Changed from #333 to Blue per Slide 26 */
+    overflow: hidden;
+    background-color: blue; /* As seen in Slide 26 */
 }
 
-#nav_menu li { /* Added # */
-    float: left;
+#nav_menu li {
+    float: left; /* Makes the list horizontal */
 }
 
-#nav_menu li a { /* Added # */
+#nav_menu li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 1em 20px; /* Use 'em' as seen in slides */
+    padding: 1em 20px;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-weight: bold;
-    border-right: 2px solid white; /* Added white separator line */
+    /* Slide 26 uses white right borders as separators */
+    border-right: 2px solid white; 
 }
 
-/* Remove the line from the 'About Us' link */
+/* Remove the border from the very last item (About Us) */
 #nav_menu li a.lastitem {
     border-right: none;
 }
 
-/* Hover and Focus states */
+/* Pseudo-classes for links (Slide 27) */
 #nav_menu li a:hover, #nav_menu li a:focus {
-    background-color: #000;
+    background-color: #000080; /* Darker blue on hover */
 }
 
-/* Current Page Highlight */
-#nav_menu a.current { /* Added # */
-    color: yellow; /* Project B will now be yellow */
+/* Requirement: Style for the current page link */
+#nav_menu a.current {
+    color: yellow;
 }
 
-/* --- Layout (To match your Word Doc/Image) --- */
-main {
-    width: 95%;
-    margin: 20px auto;
-    overflow: hidden; 
-}
-
+/* --- Layout to fix the "Top Right" issue --- */
+/* This ensures the aside stays below the article text */
 article {
-    width: 70%;
-    float: left;
-    padding-right: 2%;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
 }
 
 aside {
-    width: 20%; /* Slightly smaller to ensure fit */
-    float: right;
-    background-color: #f9f9f9; 
-    padding: 15px;
-    border: 1px solid #ccc;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
 }
 
-/* --- List Requirements (5 & 6) --- */
+/* --- 5. Aside Ordered List (Upper Roman) --- */
 aside ol {
-    list-style-type: upper-roman; /* Requirement #5 */
+    list-style-type: upper-roman;
     margin-bottom: 20px;
 }
 
+/* --- 6. Aside Unordered List (Square) --- */
 aside ul {
-    list-style-type: square; /* Requirement #6 */
+    list-style-type: square;
 }
 
-/* Aside Links styling */
+/* Sidebar Link Styling */
 aside a {
     text-decoration: none;
-    color: #0000EE;
+    color: blue;
 }
 
 aside a:hover {
     text-decoration: underline;
 }
 
-/* --- Typography --- */
-article h1 {
+/* --- General Content Styling --- */
+h1 {
     font-size: 200%;
-    margin-top: 0;
 }
 
-article h2 {
-    border-bottom: 2px solid #333;
+h2 {
+    border-bottom: 2px solid blue;
     padding-bottom: 5px;
 }
 
-article p {
+p {
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
 }
