@@ -90,9 +90,10 @@ body {
 
 .introimg {
     width: 150px;
-    display: block;
-    margin: 15px 0 25px 0;
+    float: left;
+    margin: 0 15px 15px 0;
 }
+
 
 .evalbox {
     width: 300px;
