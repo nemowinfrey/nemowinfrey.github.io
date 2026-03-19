@@ -15,12 +15,11 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 1em 25px; /* Adjust padding for that specific button size */
+    padding: 1em 25px; /* Adjust this to match the width of your other buttons */
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    /* This creates the white vertical lines between links */
-    border-right: 2px solid white; 
+    border-right: 2px solid white; /* This creates the white lines */
 }
 
 /* This removes the white line from the very last item (About Us) */
