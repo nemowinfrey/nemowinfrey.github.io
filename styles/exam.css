@@ -79,6 +79,7 @@ article p::first-letter {
     font-size: 200%;
     font-weight: bold;
     font-style: italic;
+    color: red;
 }
 
 article img {
