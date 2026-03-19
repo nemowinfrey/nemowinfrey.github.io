@@ -1,64 +1,64 @@
-/* --- Navigation Menu (Exact Slide 26 Match) --- */
+/* ================================
+   Navigation Menu (Slide #26)
+   ================================ */
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
-    background-color: blue; /* Matches the blue bar in the image */
+    background-color: blue;
 }
 
 #nav_menu li {
-    float: left; /* Keeps items horizontal */
+    float: left;
 }
 
 #nav_menu li a {
     display: block;
-    color: white;
+    width: 175px;
+    padding: 1em 0;
     text-align: center;
-    padding: 1em 25px; /* Adjust this to match the width of your other buttons */
     text-decoration: none;
-    font-family: Arial, sans-serif;
+    background-color: blue;
+    color: white;
     font-weight: bold;
-    border-right: 2px solid white; /* This creates the white lines */
+    border-right: 2px solid white;
 }
 
-/* This removes the white line from the very last item (About Us) */
+/* Remove border from last item */
 #nav_menu li a.lastitem {
     border-right: none;
 }
 
-/* This makes the "Project B" text yellow as seen in your screenshot */
-#nav_menu a.current {
+/* Highlight current page */
+#nav_menu li a.current {
     color: yellow;
 }
 
-/* Hover effect from Slide 26 */
-#nav_menu li a:hover, #nav_menu li a:focus {
-    background-color: #000080; /* Darker blue when hovering */
+/* Hover effect */
+#nav_menu li a:hover,
+#nav_menu li a:focus {
+    background-color: navy;
 }
 
-/* --- Layout Fix to keep the list at the bottom --- */
-article {
+/* Clear floats so content doesn't slide up */
+#nav_menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ================================
+   Article + Aside Layout
+   ================================ */
+article, aside {
     width: 95%;
     margin: 20px auto;
     display: block;
 }
 
-/* This ensures the Introduction/Background titles have NO underline */
-article h2 {
-    border-bottom: none; 
-    margin-top: 30px;
-}
-
-aside {
-    width: 95%;
-    margin: 20px auto;
-    display: block;
-    padding: 15px;
-    background-color: #f9f9f9;
-}
-
-/* --- List Requirements (5 & 6) --- */
+/* ================================
+   List Requirements
+   ================================ */
 aside ol {
     list-style-type: upper-roman;
 }
