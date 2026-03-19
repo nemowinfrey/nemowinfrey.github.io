@@ -6,6 +6,7 @@ html, body {
 body {
     width: 90%;
     margin: 15px auto;
+    background-color: white;
     background-image: url("../images/newback.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -18,7 +19,7 @@ body {
 
 #nav_menu {
     border-bottom: 2px solid black;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     margin-bottom: 25px;
 }
 
@@ -73,6 +74,7 @@ body {
     column-rule: 2px solid black;
     font-size: 1rem;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 .columns h2 {
@@ -87,16 +89,16 @@ body {
 }
 
 .introimg {
-    width: 180px;
+    width: 160px;
     display: block;
     margin: 0 0 15px 0;
 }
 
 .evalbox {
-    width: 180px;
+    width: 230px;
     background-color: #cce0ff;
     border: 2px solid black;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     right: 10px;
     top: 250px;
@@ -106,9 +108,20 @@ body {
     margin-top: 0;
 }
 
+.evalbox ol {
+    margin-left: 20px;
+}
+
+.evalbox ul {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.evalbox ol ol {
+    margin-left: 25px;
+}
+
 .evalbox a {
-    display: block;
-    margin-top: 5px;
     color: black;
     text-decoration: none;
     font-weight: bold;
