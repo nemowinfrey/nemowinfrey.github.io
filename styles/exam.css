@@ -15,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* NAV MENU */
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
@@ -53,8 +54,10 @@ body {
     clear: both;
 }
 
+/* ARTICLE + ASIDE LAYOUT */
 main {
     width: 100%;
+    margin-top: 20px;
 }
 
 article {
@@ -62,7 +65,10 @@ article {
     float: left;
     padding-right: 20px;
     border-right: 2px solid black;
-    margin-top: 20px;
+}
+
+article h1 {
+    margin-top: 0;
 }
 
 article p::first-letter {
@@ -77,6 +83,7 @@ article img {
     width: 200px;
 }
 
+/* ASIDE */
 aside {
     width: 20%;
     position: fixed;
@@ -94,10 +101,11 @@ aside ul {
     margin-left: 20px;
 }
 
+/* FOOTER */
 footer {
     clear: both;
     border-top: 2px solid black;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 10px;
     text-align: center;
 }
