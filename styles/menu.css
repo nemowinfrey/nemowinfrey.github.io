@@ -55,19 +55,9 @@ body {
     clear: both;
 }
 
-article {
-    width: 70%;
-    float: left;
-    margin-top: 20px;
-}
-
-aside {
-    width: 25%;
-    float: right;
-    background-color: #f2f2f2;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
+article, aside {
+    width: 95%;
+    float: none;
 }
 
 aside ol {
