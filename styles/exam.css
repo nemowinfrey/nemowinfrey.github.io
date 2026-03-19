@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    width: 90%;
+    width: 85%;
     margin: 15px auto;
     background-color: white;
     background-image: url("../images/newback.jpg");
@@ -74,6 +74,7 @@ body {
     column-rule: 2px solid black;
     font-size: 1rem;
     line-height: 1.4;
+    width: calc(100% - 260px);
 }
 
 .columns h2 {
