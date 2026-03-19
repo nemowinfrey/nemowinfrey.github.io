@@ -74,7 +74,6 @@ body {
     column-rule: 2px solid black;
     font-size: 1rem;
     line-height: 1.4;
-    overflow-x: hidden;
 }
 
 .columns h2 {
@@ -89,9 +88,9 @@ body {
 }
 
 .introimg {
-    width: 160px;
+    width: 150px;
     display: block;
-    margin: 0 0 15px 0;
+    margin: 10px 0 20px 0;
 }
 
 .evalbox {
