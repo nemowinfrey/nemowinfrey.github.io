@@ -75,7 +75,7 @@ article p::first-letter {
     font-size: 3em;
     font-weight: bold;
     font-style: italic;
-    color: lightgreen;
+    color: red;
 } 
 
 aside {
@@ -99,7 +99,7 @@ p.fixed {
     top: 65%;
     right: 0;
     width: auto;       
-    background-color: #90ee90;
+    background-color: #ffffff;
     padding: 15px 25px;
     margin: 0;
     border: 1px solid black;
