@@ -7,6 +7,9 @@ html {
 body {
     width: 95%;
     margin: 15px auto;
+    background-image: url("../images/newback.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     background-color: white;
     padding: 20px;
     border: 2px solid black;
@@ -14,6 +17,7 @@ body {
     box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* NAV MENU */
 #nav_menu ul {
