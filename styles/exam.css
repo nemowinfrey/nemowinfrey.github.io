@@ -88,46 +88,51 @@ body {
     font-style: italic;
 }
 
+/* Image wraps with text */
 .introimg {
     width: 150px;
     float: left;
     margin: 0 15px 15px 0;
 }
 
-
+/* Evaluation box container */
 .evalbox {
     width: 300px;
-    background-color: red;
-    border: 2px solid black;
-    padding: 15px;
     position: fixed;
     right: 20px;
     top: 300px;
-    max-height: none;
-    overflow: visible;
+    padding: 0;
+    border: none;
+}
+
+/* Red background ONLY behind the list */
+.listwrap {
+    background-color: red;
+    border: 2px solid black;
+    padding: 15px;
 }
 
 /* Roman numerals */
-.evalbox > ol {
+.listwrap > ol {
     margin-left: 10px;
     padding-left: 10px;
 }
 
 /* Bullets under Method */
-.evalbox li > ul {
+.listwrap li > ul {
     margin-left: 25px;
     padding-left: 10px;
     list-style-type: disc;
 }
 
 /* Letters under Analysis */
-.evalbox li > ul > li > ol {
+.listwrap li > ul > li > ol {
     margin-left: 35px;
     padding-left: 10px;
 }
 
 /* Space between items */
-.evalbox li {
+.listwrap li {
     margin-bottom: 6px;
 }
 
@@ -141,10 +146,15 @@ body {
     text-decoration: underline;
 }
 
+/* “Return to top” link spacing */
+.evalbox > a {
+    display: block;
+    margin-top: 10px;
+}
+
 footer {
     text-align: center;
     border-top: 2px solid black;
     margin-top: 60px;
     padding-top: 10px;
 }
-``
