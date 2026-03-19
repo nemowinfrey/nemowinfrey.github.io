@@ -75,3 +75,9 @@ aside ul {
     display: block;
     clear: both;
 }
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
