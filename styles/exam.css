@@ -5,10 +5,10 @@ html {
 body {
     width: 95%;
     margin: 15px auto;
-    background-image: url("../images/newback.jpg");
-    background-attachment: fixed;
-    background-size: cover;
     background-color: white;
+    background-image: url("../images/newback.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     padding: 20px;
     border: 2px solid black;
     border-radius: 20px;
@@ -45,8 +45,8 @@ body {
 }
 
 #nav_menu ul li a.current {
-    color: black;
     background-color: white;
+    color: black;
 }
 
 #nav_menu ul li a:hover {
@@ -60,72 +60,75 @@ body {
     clear: both;
 }
 
-main {
-    width: 100%;
+.title {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
 }
 
-article {
-    width: 75%;
-    float: left;
-    padding-right: 20px;
-    border-right: 2px dotted black;
+.watermark {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 150px;
+    color: rgba(255,0,0,0.15);
+    transform: rotate(-30deg);
+    pointer-events: none;
+    z-index: 0;
 }
 
-article h1 {
-    margin-top: 0;
+.columns {
+    column-count: 3;
+    column-gap: 40px;
+    position: relative;
+    z-index: 1;
 }
 
-article p::first-letter {
+.columns h2 {
+    color: red;
+    break-before: column;
+}
+
+.columns p::first-letter {
     font-size: 200%;
     font-weight: bold;
     font-style: italic;
 }
 
-article img {
+.introimg {
+    width: 150px;
     float: left;
     margin: 10px;
+}
+
+.evalbox {
     width: 200px;
-}
-
-aside {
-    width: 20%;
-    position: fixed;
-    right: 20px;
-    top: 150px;
-    background-color: white;
-    padding: 15px;
+    background-color: #cce0ff;
     border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 0 0 black;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 300px;
 }
 
-aside ol {
-    list-style-type: upper-roman;
-    margin-left: 20px;
+.second {
+    top: 550px;
 }
 
-aside ul {
-    list-style-type: square;
-    margin-left: 25px;
+.evalbox h3 {
+    margin-top: 0;
 }
 
-aside ol ol {
-    list-style-type: lower-alpha;
-    margin-left: 25px;
-}
-
-h1 {
-    color: red;
-}
-
-h2 {
-    color: red;
+.evalbox a {
+    display: block;
+    margin-top: 10px;
 }
 
 footer {
-    clear: both;
-    border-top: 2px solid black;
-    margin-top: 40px;
-    padding-top: 10px;
     text-align: center;
+    border-top: 2px solid black;
+    margin-top: 50px;
+    padding-top: 10px;
 }
