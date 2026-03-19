@@ -69,13 +69,14 @@ body {
 }
 
 .columns {
-    width: calc(100% - 420px);
+    width: calc(100% - 500px);
     column-count: 3;
-    column-gap: 45px;
+    column-gap: 35px;
     column-rule: 2px solid black;
     font-size: 1rem;
     line-height: 1.45;
 }
+
 
 .columns h2 {
     color: red;
