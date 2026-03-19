@@ -96,13 +96,16 @@ body {
 
 .evalbox {
     width: 260px;
-    background-color: #cce0ff;
+    background-color: red;
     border: 2px solid black;
     padding: 15px;
     position: fixed;
     right: 20px;
     top: 260px;
+    max-height: none;
+    overflow: visible;
 }
+
 
 .evalbox h3 {
     margin-top: 0;
