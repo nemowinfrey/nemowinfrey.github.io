@@ -1,32 +1,43 @@
-nav_menu ul {
+/* --- Navigation Menu (Corrected for Slide 26) --- */
+#nav_menu ul { /* Added # */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    background-color: #333; 
+    background-color: blue; /* Changed from #333 to Blue per Slide 26 */
 }
 
-nav_menu li {
+#nav_menu li { /* Added # */
     float: left;
 }
 
-nav_menu li a {
+#nav_menu li a { /* Added # */
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 1em 20px; /* Use 'em' as seen in slides */
     text-decoration: none;
     font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-right: 2px solid white; /* Added white separator line */
 }
 
-nav_menu li a:hover, #nav_menu li a:focus {
+/* Remove the line from the 'About Us' link */
+#nav_menu li a.lastitem {
+    border-right: none;
+}
+
+/* Hover and Focus states */
+#nav_menu li a:hover, #nav_menu li a:focus {
     background-color: #000;
 }
 
-nav_menu a.current {
-    color: yellow;
+/* Current Page Highlight */
+#nav_menu a.current { /* Added # */
+    color: yellow; /* Project B will now be yellow */
 }
 
+/* --- Layout (To match your Word Doc/Image) --- */
 main {
     width: 95%;
     margin: 20px auto;
@@ -40,22 +51,24 @@ article {
 }
 
 aside {
-    width: 25%;
+    width: 20%; /* Slightly smaller to ensure fit */
     float: right;
     background-color: #f9f9f9; 
     padding: 15px;
     border: 1px solid #ccc;
 }
 
+/* --- List Requirements (5 & 6) --- */
 aside ol {
-    list-style-type: upper-roman;
+    list-style-type: upper-roman; /* Requirement #5 */
     margin-bottom: 20px;
 }
 
 aside ul {
-    list-style-type: square;
+    list-style-type: square; /* Requirement #6 */
 }
 
+/* Aside Links styling */
 aside a {
     text-decoration: none;
     color: #0000EE;
@@ -65,6 +78,7 @@ aside a:hover {
     text-decoration: underline;
 }
 
+/* --- Typography --- */
 article h1 {
     font-size: 200%;
     margin-top: 0;
