@@ -1,14 +1,14 @@
-#nav_menu ul { 
+nav_menu ul { 
     list-style-type: none; 
     margin: 0;
     padding: 0;
 }
 
-#nav_menu ul li { 
+nav_menu ul li { 
     float: left; 
 }
 
-#nav_menu ul li a {
+nav_menu ul li a {
     text-align: center;
     display: block;
     width: 160px; 
@@ -20,11 +20,11 @@
     border-right: 2px solid white; 
 }
 
-#nav_menu ul li a.lastitem { 
+nav_menu ul li a.lastitem { 
     border-right: none; 
 }
 
-#nav_menu ul li a.current { 
+nav_menu ul li a.current { 
     color: yellow; 
 }
 aside ol {
