@@ -1,124 +1,107 @@
 html {
-    background-image: url("../images/newback.jpg");
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: linear-gradient(to left, white 0%, #ff0000 100%);
 }
 
 body {
-    width: 95%;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 100%;
+    width: 90%;
+    background-color: white;
     margin: 15px auto;
-    background-color: white;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 0 0 black;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background: url("/images/newback.jpg") right repeat-y;
+    background-attachment: fixed;
 }
 
-/* NAV MENU */
-#nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-    border-bottom: 2px solid black; /* horizontal line under nav */
+a:hover, a:focus {
+    font-style: italic;
+    color: red;
+    border: 3px blue; 
+    border-style: dotted solid;
 }
 
-#nav_menu ul li {
-    float: left;
+header {
+    margin-bottom: 3em;
+    border-bottom: 2px solid maroon; 
+    padding-bottom: 15px;
 }
 
-#nav_menu ul li a {
-    display: block;
-    width: 175px;
-    padding: 1em 0;
-    text-align: center;
-    text-decoration: none;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid black;
-}
-
-#nav_menu ul li a.current {
+header h1 {
+    font-size: 175%;
     color: black;
-    background-color: white;
+    text-indent: 30px;
 }
 
-#nav_menu ul li a:hover {
-    background-color: black;
-    color: white;
+header h2 {
+    font-size: 130%;
+    color: #000000;
+    text-indent: 30px;
 }
 
-#nav_menu::after {
-    content: "";
-    display: block;
-    clear: both;
+header img {
+    float: left;
+    margin-left: 2em;
+    margin-right: 1em;
 }
 
-/* PAGE LAYOUT */
-main {
-    width: 100%;
-    margin-top: 20px;
+.shadow {
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
 }
 
 article {
-    width: 75%;
+    clear: left;
+    width: 70%;
     float: left;
-    padding-right: 20px;
-    border-right: 2px dotted black; /* vertical dotted line */
+    column-count: 2;
+    column-rule: 2px dotted black; 
+    column-gap: 2em;
+    margin-left: 2em;
 }
 
-article h1 {
-    margin-top: 0;
-}
-
-article p::first-letter {
-    font-size: 200%;
-    font-weight: bold;
-    font-style: italic;
+article h3 {
+    column-span: all;
 }
 
 article img {
     float: left;
-    margin: 10px;
-    width: 200px;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
-/* ASIDE */
+article p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen;
+} 
+
 aside {
     width: 20%;
-    position: fixed;
-    right: 20px;
-    top: 150px;
-    background-color: white;
+    float: right;
+    background-color: #ffebc6;
     padding: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 0 0 black;
+    box-sizing: border-box;
 }
 
-/* LIST STYLES TO MATCH WORD DOC */
-aside ol {
-    list-style-type: upper-roman;
-    margin-left: 20px;
-}
-
-aside ul {
-    list-style-type: square;
-    margin-left: 25px;
-}
-
-aside ol ol {
-    list-style-type: lower-alpha;
-    margin-left: 25px;
-}
-
-/* FOOTER */
 footer {
     clear: both;
-    border-top: 2px solid black; /* horizontal line above footer */
-    margin-top: 40px;
-    padding-top: 10px;
+    border-top: 2px solid maroon;
     text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+p.fixed {
+    position: fixed;   
+    top: 65%;
+    right: 0;
+    width: auto;       
+    background-color: #90ee90;
+    padding: 15px 25px;
+    margin: 0;
+    border: 1px solid black;
+    z-index: 1000;
 }
