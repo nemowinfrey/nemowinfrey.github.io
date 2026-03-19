@@ -1,9 +1,10 @@
 html {
     background-color: white;
+    overflow-x: hidden;
 }
 
 body {
-    width: 95%;
+    width: 90%;
     margin: 15px auto;
     background-color: white;
     background-image: url("../images/newback.jpg");
@@ -14,6 +15,7 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 #nav_menu {
@@ -94,13 +96,9 @@ body {
     background-color: #cce0ff;
     border: 2px solid black;
     padding: 10px;
-    position: absolute;
-    right: 20px;
-    top: 300px;
-}
-
-.second {
-    top: 550px;
+    position: fixed;
+    right: 30px;
+    top: 250px;
 }
 
 .evalbox h3 {
@@ -109,7 +107,14 @@ body {
 
 .evalbox a {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.evalbox a:hover {
+    text-decoration: underline;
 }
 
 footer {
