@@ -17,23 +17,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nav menu - exactly your original */
 #nav_menu {
     border-bottom: 2px solid black;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
-
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: red;
 }
-
-#nav_menu ul li {
-    float: left;
-}
-
+#nav_menu ul li { float: left; }
 #nav_menu ul li a {
     display: block;
     width: 175px;
@@ -45,60 +41,56 @@ body {
     font-weight: bold;
     border-right: 2px solid black;
 }
-
 #nav_menu ul li a.current {
     background-color: white;
     color: black;
 }
-
 #nav_menu ul li a:hover {
     background-color: black;
     color: white;
 }
-
 #nav_menu::after {
     content: "";
     display: block;
     clear: both;
 }
 
+/* Article - 75% width + float (Ch4) + line between columns */
+article {
+    width: 75%;
+    float: left;
+    border-right: 2px solid black;   /* the "between the columns" line */
+    padding-right: 20px;
+    margin-right: 3%;
+}
+
+/* Title and headings - your red color */
 .title {
     text-align: center;
     color: red;
     margin: 20px 0;
 }
-
-.columns {
-    width: calc(100% - 500px);
-    column-count: 3;
-    column-gap: 35px;
-    column-rule: 2px solid black;
-    font-size: 1rem;
-    line-height: 1.45;
-}
-
-
-.columns h2 {
+article h2 {
     color: red;
-    break-before: column;
 }
 
-.columns p::first-letter {
+/* First letter - your exact style */
+article p::first-letter {
     font-size: 200%;
     font-weight: bold;
     font-style: italic;
 }
 
-/* Image wraps with text */
+/* Image - your exact class + wrapping */
 .introimg {
     width: 150px;
     float: left;
     margin: 0 15px 15px 0;
 }
 
-/* Evaluation box container */
+/* Aside - your exact evalbox but now 20% and fixed */
 .evalbox {
-    width: 300px;
+    width: 20%;
     position: fixed;
     right: 20px;
     top: 300px;
@@ -106,33 +98,27 @@ body {
     border: none;
 }
 
-/* Red background ONLY behind the list */
+/* Red background ONLY behind the list - your exact style */
 .listwrap {
     background-color: red;
     border: 2px solid black;
     padding: 15px;
 }
 
-/* Roman numerals */
+/* Your list styles (Roman numerals, bullets, letters) */
 .listwrap > ol {
     margin-left: 10px;
     padding-left: 10px;
 }
-
-/* Bullets under Method */
 .listwrap li > ul {
     margin-left: 25px;
     padding-left: 10px;
     list-style-type: disc;
 }
-
-/* Letters under Analysis */
 .listwrap li > ul > li > ol {
     margin-left: 35px;
     padding-left: 10px;
 }
-
-/* Space between items */
 .listwrap li {
     margin-bottom: 6px;
 }
@@ -142,18 +128,17 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 .evalbox a:hover {
     text-decoration: underline;
 }
-
-/* “Return to top” link spacing */
 .evalbox > a {
     display: block;
     margin-top: 10px;
 }
 
+/* Footer line + clear the float */
 footer {
+    clear: both;
     text-align: center;
     border-top: 2px solid black;
     margin-top: 60px;
