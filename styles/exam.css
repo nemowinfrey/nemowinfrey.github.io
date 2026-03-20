@@ -1,8 +1,3 @@
-html, body {
-    background-color: white;
-    overflow-x: hidden;
-}
-
 body {
     width: 95%;
     margin: 15px auto;
@@ -10,12 +5,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     padding: 25px;
-    border: 2px solid black;          
+    border: 2px solid black;
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nav menu - your red style */
 #nav_menu {
     border-bottom: 2px solid black;
     padding-bottom: 10px;
@@ -32,45 +28,41 @@ body {
 #nav_menu ul li a:hover { background-color: black; color: white; }
 #nav_menu::after { content: ""; display: block; clear: both; }
 
+/* THREE-COLUMN TEXT WITH YOUR RED DOTTED LINES (exactly like the screenshot) */
 article {
     width: 75%;
     float: left;
     margin-right: 3%;
-    border-right: 2px dotted red;     
-    padding-right: 20px;
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 2px dotted red;   /* ← these are the 2 red dotted lines you want */
 }
 
-.title {
-    text-align: center;
-    color: red;
-    margin: 20px 0;
-}
-
+/* Title + first letter */
+.title { text-align: center; color: red; margin: 20px 0; }
 article p::first-letter {
-    font-size: 200%;
-    font-weight: bold;
-    font-style: italic;
+    font-size: 200%; font-weight: bold; font-style: italic;
 }
 
+/* Image floats and text wraps */
 .introimg {
     width: 150px;
     float: left;
     margin: 0 15px 15px 0;
 }
 
+/* Fixed red aside */
 .evalbox {
     width: 20%;
     position: fixed;
     right: 20px;
     top: 300px;
 }
-
 .listwrap {
     background-color: red;
     border: 2px solid black;
     padding: 15px;
 }
-
 .listwrap > ol { margin-left: 10px; padding-left: 10px; }
 .listwrap li > ul { margin-left: 25px; list-style-type: disc; }
 .listwrap li > ul > li > ol { margin-left: 35px; list-style-type: lower-alpha; }
@@ -80,6 +72,7 @@ article p::first-letter {
 .evalbox a:hover { text-decoration: underline; }
 .evalbox > a { display: block; margin-top: 10px; }
 
+/* Footer */
 footer {
     clear: both;
     text-align: center;
