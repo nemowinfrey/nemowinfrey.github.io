@@ -7,11 +7,18 @@ body {
     width: 95%;
     margin: 15px auto;
     background-color: white;
-    background-image: url("../images/newback.jpg");
+    background-image: url("../images/newback.jpg");   /* keep your image */
     background-size: cover;
     background-attachment: fixed;
     padding: 25px;
-    border: 2px solid black;
+    
+    /* === THIS IS THE NEW PART FOR YOUR 2 VERTICAL RED DOTTED LINES === */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px dotted red;
+    border-right: 2px dotted red;
+    /* ================================================================ */
+    
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
