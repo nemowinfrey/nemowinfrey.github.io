@@ -6,79 +6,47 @@ html, body {
 body {
     width: 95%;
     margin: 15px auto;
-    background-color: white;
-    background-image: url("../images/newback.jpg");   /* keep your image */
+    background-image: url("../images/newback.jpg");
     background-size: cover;
     background-attachment: fixed;
     padding: 25px;
-    
-    /* === THIS IS THE NEW PART FOR YOUR 2 VERTICAL RED DOTTED LINES === */
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px dotted red;
-    border-right: 2px dotted red;
-    /* ================================================================ */
-    
+    border: 2px solid black;          /* keeps your original solid black around the body */
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Nav menu - exactly your original */
+/* Nav menu - your exact original */
 #nav_menu {
     border-bottom: 2px solid black;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
-#nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-}
+#nav_menu ul { list-style-type: none; margin: 0; padding: 0; background-color: red; }
 #nav_menu ul li { float: left; }
 #nav_menu ul li a {
-    display: block;
-    width: 175px;
-    padding: 1em 0;
-    text-align: center;
-    text-decoration: none;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid black;
+    display: block; width: 175px; padding: 1em 0; text-align: center;
+    text-decoration: none; background-color: red; color: white;
+    font-weight: bold; border-right: 2px solid black;
 }
-#nav_menu ul li a.current {
-    background-color: white;
-    color: black;
-}
-#nav_menu ul li a:hover {
-    background-color: black;
-    color: white;
-}
-#nav_menu::after {
-    content: "";
-    display: block;
-    clear: both;
-}
+#nav_menu ul li a.current { background-color: white; color: black; }
+#nav_menu ul li a:hover { background-color: black; color: white; }
+#nav_menu::after { content: ""; display: block; clear: both; }
 
-/* Article - 75% width + float (Ch4) + line between columns */
+/* Article - 75% width + THE RED DOTTED LINE you wanted between columns */
 article {
     width: 75%;
     float: left;
-    border-right: 2px solid black;   /* the "between the columns" line */
-    padding-right: 20px;
     margin-right: 3%;
+    border-right: 2px dotted red;     /* ← this is the vertical separator between the 3 columns */
+    padding-right: 20px;
 }
 
-/* Title and headings - your red color */
+/* Title is now guaranteed red (fixes the white box issue) */
 .title {
     text-align: center;
     color: red;
     margin: 20px 0;
-}
-article h2 {
-    color: red;
 }
 
 /* First letter - your exact style */
@@ -88,62 +56,39 @@ article p::first-letter {
     font-style: italic;
 }
 
-/* Image - your exact class + wrapping */
+/* Image still floats and wraps text */
 .introimg {
     width: 150px;
     float: left;
     margin: 0 15px 15px 0;
 }
 
-/* Aside - your exact evalbox but now 20% and fixed */
+/* Aside - fixed + 20% */
 .evalbox {
     width: 20%;
     position: fixed;
     right: 20px;
     top: 300px;
-    padding: 0;
-    border: none;
 }
 
-/* Red background ONLY behind the list - your exact style */
+/* Red list box - your exact style */
 .listwrap {
     background-color: red;
     border: 2px solid black;
     padding: 15px;
 }
 
-/* Your list styles (Roman numerals, bullets, letters) */
-.listwrap > ol {
-    margin-left: 10px;
-    padding-left: 10px;
-}
-.listwrap li > ul {
-    margin-left: 25px;
-    padding-left: 10px;
-    list-style-type: disc;
-}
-.listwrap li > ul > li > ol {
-    margin-left: 35px;
-    padding-left: 10px;
-}
-.listwrap li {
-    margin-bottom: 6px;
-}
+/* List styles - your exact nested lists */
+.listwrap > ol { margin-left: 10px; padding-left: 10px; }
+.listwrap li > ul { margin-left: 25px; list-style-type: disc; }
+.listwrap li > ul > li > ol { margin-left: 35px; list-style-type: lower-alpha; }
+.listwrap li { margin-bottom: 6px; }
 
-.evalbox a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.evalbox a:hover {
-    text-decoration: underline;
-}
-.evalbox > a {
-    display: block;
-    margin-top: 10px;
-}
+.evalbox a { color: black; text-decoration: none; font-weight: bold; }
+.evalbox a:hover { text-decoration: underline; }
+.evalbox > a { display: block; margin-top: 10px; }
 
-/* Footer line + clear the float */
+/* Footer line */
 footer {
     clear: both;
     text-align: center;
