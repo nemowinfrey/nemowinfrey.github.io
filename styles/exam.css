@@ -1,3 +1,12 @@
+/* ============================================= */
+/* FULL UPDATED exam.css - Copy and paste entire file */
+/* ============================================= */
+
+html, body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
 body {
     width: 95%;
     margin: 15px auto;
@@ -11,68 +20,131 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Nav menu - your red style */
+/* Nav menu - your exact red style */
 #nav_menu {
     border-bottom: 2px solid black;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
-#nav_menu ul { list-style-type: none; margin: 0; padding: 0; background-color: red; }
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
 #nav_menu ul li { float: left; }
 #nav_menu ul li a {
-    display: block; width: 175px; padding: 1em 0; text-align: center;
-    text-decoration: none; background-color: red; color: white;
-    font-weight: bold; border-right: 2px solid black;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid black;
 }
-#nav_menu ul li a.current { background-color: white; color: black; }
-#nav_menu ul li a:hover { background-color: black; color: white; }
-#nav_menu::after { content: ""; display: block; clear: both; }
+#nav_menu ul li a.current {
+    background-color: white;
+    color: black;
+}
+#nav_menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+#nav_menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
-/* THREE-COLUMN TEXT WITH YOUR RED DOTTED LINES (exactly like the screenshot) */
+/* Article - 3 columns + YOUR red dotted vertical lines (exactly like your screenshot) */
 article {
     width: 75%;
     float: left;
     margin-right: 3%;
     column-count: 3;
     column-gap: 35px;
-    column-rule: 2px dotted red;   /* ← these are the 2 red dotted lines you want */
+    column-rule: 2px dotted red;   /* ← the two red dotted lines you wanted */
 }
 
-/* Title + first letter */
-.title { text-align: center; color: red; margin: 20px 0; }
+/* Research Project B title - NOW ALIGNED LEFT with "Introduction" + SAME font size */
+.title {
+    text-align: left;
+    color: red;
+    margin: 10px 0 15px 0;
+    font-size: 1.8em;              /* exact same size as your h2 headings */
+}
+
+/* All h2 headings - same red color and font size */
+article h2 {
+    color: red;
+    font-size: 1.8em;
+    margin-top: 25px;
+}
+
+/* First letter of every paragraph - your exact style */
 article p::first-letter {
-    font-size: 200%; font-weight: bold; font-style: italic;
+    font-size: 200%;
+    font-weight: bold;
+    font-style: italic;
 }
 
-/* Image floats and text wraps */
+/* Image floats left so text wraps around it */
 .introimg {
     width: 150px;
     float: left;
     margin: 0 15px 15px 0;
 }
 
-/* Fixed red aside */
+/* Fixed red aside (20% width) */
 .evalbox {
     width: 20%;
     position: fixed;
     right: 20px;
     top: 300px;
 }
+
+/* Red background ONLY behind the list */
 .listwrap {
     background-color: red;
     border: 2px solid black;
     padding: 15px;
 }
-.listwrap > ol { margin-left: 10px; padding-left: 10px; }
-.listwrap li > ul { margin-left: 25px; list-style-type: disc; }
-.listwrap li > ul > li > ol { margin-left: 35px; list-style-type: lower-alpha; }
-.listwrap li { margin-bottom: 6px; }
 
-.evalbox a { color: black; text-decoration: none; font-weight: bold; }
-.evalbox a:hover { text-decoration: underline; }
-.evalbox > a { display: block; margin-top: 10px; }
+/* List styles - Roman numerals + nested bullets/letters */
+.listwrap > ol {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.listwrap li > ul {
+    margin-left: 25px;
+    padding-left: 10px;
+    list-style-type: disc;
+}
+.listwrap li > ul > li > ol {
+    margin-left: 35px;
+    padding-left: 10px;
+    list-style-type: lower-alpha;
+}
+.listwrap li {
+    margin-bottom: 6px;
+}
 
-/* Footer */
+.evalbox a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.evalbox a:hover {
+    text-decoration: underline;
+}
+.evalbox > a {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer line */
 footer {
     clear: both;
     text-align: center;
