@@ -2,8 +2,6 @@ html, body {
     margin: 0;
     height: 100%;
     font-size: 100%;
-    background-image: linear-gradient(to left, white 0%, #ff0000 100%);
-
 }
 
 * {
@@ -11,14 +9,12 @@ html, body {
     box-sizing: border-box;
 }
 
-/*---------------------------------------------------------------*/
 .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #cc0000, #000000);
+    background: linear-gradient(to left, #f46b45, #eea849);
     color: #FFF;
     height: 3em;
     padding: 1em;
@@ -86,34 +82,29 @@ html, body {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
-/*----end of menu*/
 
-/* 7. Link rules */
-section a {
+.top-nav a {
     text-decoration: none;
     color: white;
 }
 
-.menu a:hover, a.current {
+.menu a:hover,
+a.current {
     text-decoration: underline;
 }
 
-/* 8. Article padding */
 article {
     padding: 0 1em;
 }
 
-/* 9. Article h2 size */
 article h2 {
     font-size: 1.25em;
 }
 
-/* 10. Article p size */
 article p {
     font-size: 1em;
 }
 
-/* 11. Article img styling */
 article img {
     margin: auto;
     display: block;
@@ -121,20 +112,18 @@ article img {
     max-width: 760px;
 }
 
-/* 12. Footer styling */
 footer {
-    border-top: 2px solid #cc0000;
+    border-top: 2px solid #f46b45;
     text-align: center;
     font-size: .8em;
     padding: 1em 0;
 }
 
-/* 13. Media query with max-width: 700px */
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
     }
-    
+
     .menu {
         position: absolute;
         top: 0;
@@ -175,20 +164,16 @@ footer {
         border-bottom: 1px solid #444;
     }
 
-    /* 14. Responsive h2 */
     article h2 {
         font-size: 1.1em;
     }
 
-    /* 15. Responsive p */
     article p {
         font-size: .8em;
     }
 
-    /* 16. Responsive footer */
     footer {
-        border-top: 1px solid #cc0000;
-        text-align: center;
+        border-top: 1px solid #f46b45;
         font-size: .6em;
     }
 }
