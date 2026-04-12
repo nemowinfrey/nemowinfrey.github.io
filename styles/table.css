@@ -1,64 +1,68 @@
 html, body {
-    margin: 1em;
-    height: 100%;
-    font-size: 100%;
+margin: 1em;
+height: 100%;
+font-size: 100%;
 }
 * {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
 table.first {
     border-collapse: separate;
     border: 2px solid black;    
 }
 table.first th, table.first td {
-    border: 2px solid blue;
+    border: 2px solid limegreen;
 }
 table.first tr:nth-child(odd) {
-    background-color: lightblue;
+    background-color: #98fb98;
 }
+
 table.second {    
     border-collapse: collapse; 
-    border: 2px solid purple;   
+    border: 2px solid black;   
     caption-side: bottom;
 }
 table.second th {
-    background-color: salmon;
+    background-color: red;
 }
 table.second th, table.second td {
     padding: 0.7em;  
     vertical-align: middle;
-    border: 2px solid purple;
+    border: 2px solid red;
 }
 table.second thead tr:first-child{     
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid red;
 }
+
 table.third {
     border-collapse: collapse;
-    border: 2px solid black;
+    border: 2px solid #555;
 }
 table.third th, table.third td {
     padding: 0.7em;
-    border: 2px solid red;
+    border: 2px solid #555;
     vertical-align: middle;
 }
 table.third td.number {
     vertical-align: top;
 }
 table.third thead tr:first-child {
-    background-color: black;
+    background-color: #333;
     color: white;
-    border-top: 4px solid red;
+    border-top: 4px solid #555;
 }
 table.third thead tr:last-child {
-    background-color: red;
-    color: black;
+    background-color: #666;
+    color: white;
 }
 table.third tr:last-child {
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #555;
 }
 table.third tbody tr:nth-child(odd) {
-    background-color: #fff0f0;
+    background-color: #f0f0f0;
 }
+
 @media only screen and (max-width: 425px) {
     th, td {
         display: block;
