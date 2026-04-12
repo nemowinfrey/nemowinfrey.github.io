@@ -19,11 +19,11 @@ html, body {
     justify-content: space-between;
     background-color: #cc0000;
     color: white;
-    height: 3.5em;
-    padding: 0 1em;
+    height: 3.8em;
+    padding: 0 1.2em;
+    width: 100%;
     position: relative;
     z-index: 100;
-    width: 100%;
 }
 
 .menu {
@@ -35,13 +35,13 @@ html, body {
 }
 
 .menu > li {
-    margin: 0 1rem;
+    margin: 0 1.2rem;
 }
 
 .menu-button-container {
     display: none;
     height: 100%;
-    width: 30px;
+    width: 32px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,7 @@ html, body {
     background-color: #fff;
     position: absolute;
     height: 4px;
-    width: 30px;
+    width: 32px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
 }
@@ -99,39 +99,39 @@ a.current {
 }
 
 article {
-    padding: 1em;
+    padding: 1.5em 1em;
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
 }
 
 article h2 {
-    font-size: 1.4em;
+    font-size: 1.45em;
 }
 
 article p {
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 article img {
-    margin: 20px auto;
+    margin: 25px auto;
     display: block;
     width: 100%;
-    max-width: 620px;
+    max-width: 580px;   /* Reduced so image is never huge */
     height: auto;
 }
 
 footer {
-    border-top: 2px solid #cc0000;
+    border-top: 3px solid #cc0000;
     text-align: center;
-    font-size: 0.8em;
-    padding: 1.2em 0;
+    font-size: 0.82em;
+    padding: 1.4em 0;
     color: #333;
     width: 100%;
 }
 
-/* Hamburger Menu - Mobile */
+/* Hamburger Menu */
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
@@ -139,7 +139,7 @@ footer {
 
     .menu {
         position: absolute;
-        top: 3.5em;
+        top: 3.8em;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -154,8 +154,8 @@ footer {
     }
 
     #menu-toggle:checked ~ .menu li {
-        height: 3em;
-        padding: 0.8em 0;
+        height: 3.2em;
+        padding: 0.9em 0;
         border-bottom: 1px solid #444;
     }
 
@@ -169,14 +169,10 @@ footer {
     }
 
     article h2 {
-        font-size: 1.2em;
+        font-size: 1.25em;
     }
 
     article p {
-        font-size: 0.9em;
-    }
-
-    footer {
-        font-size: 0.75em;
+        font-size: 0.92em;
     }
 }
