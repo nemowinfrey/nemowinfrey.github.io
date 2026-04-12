@@ -14,7 +14,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, #cc0000, #800000); 
+    background: linear-gradient(to left, #cc0000, #000000); 
     color: #FFF;
     height: 3em;
     padding: 1em;
@@ -83,7 +83,7 @@ html, body {
     transform: rotate(-405deg);
 }
 
-/* 7. Link rules */
+/* 7. Link Rules */
 section a {
     text-decoration: none;
     color: white;
@@ -98,19 +98,17 @@ article {
     padding: 0 1em;
 }
 
-/* 9. Article h2 size */
+/* 9. Article h2 */
 article h2 {
     font-size: 1.25em;
-    color: #800000;
 }
 
-/* 10. Article p size */
+/* 10. Article p */
 article p {
     font-size: 1em;
-    line-height: 1.6;
 }
 
-/* 11. Article image styling */
+/* 11. Article image */
 article img {
     margin: auto;
     display: block;
@@ -123,18 +121,10 @@ footer {
     border-top: 2px solid #cc0000;
     text-align: center;
     font-size: .8em;
-    margin-top: 2em;
-    padding: 1em 0;
-    background-color: #000;
-    color: #fff;
+    padding: 1em;
 }
 
-footer a {
-    color: #ff3333;
-    text-decoration: none;
-}
-
-/* 13. Media query max-width 700px */
+/* 13. Media Query max-width 700px */
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
