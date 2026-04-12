@@ -123,7 +123,7 @@ article img {
 }
 
 footer {
-    border-top: 3px solid #cc0000;
+    border-top: 3px solid red;
     text-align: center;
     font-size: 0.82em;
     padding: 1.4em 0;
