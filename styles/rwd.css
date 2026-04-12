@@ -17,7 +17,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #cc0000;
+    background-color: red;
     color: white;
     height: 3.8em;
     padding: 0 1.2em;
@@ -118,7 +118,7 @@ article img {
     margin: 25px auto;
     display: block;
     width: 100%;
-    max-width: 580px;   /* Reduced so image is never huge */
+    max-width: 580px;   
     height: auto;
 }
 
@@ -131,7 +131,6 @@ footer {
     width: 100%;
 }
 
-/* Hamburger Menu */
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
