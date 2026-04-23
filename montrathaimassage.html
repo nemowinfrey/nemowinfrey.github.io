@@ -37,7 +37,7 @@
             align-items: center;
         }
         
-        .logo img { height: 70px; width: auto; }
+        .logo img { height: 65px; width: auto; }
         
         .nav-links {
             display: flex;
@@ -60,23 +60,64 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            transition: all 0.3s;
         }
         
-        .book-btn:hover { background: #1b5e20; transform: translateY(-3px); }
-        
+        /* HERO - Fixed overlapping */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://source.unsplash.com/random/1600x900/?thai-massage,spa') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                        url('https://source.unsplash.com/random/1600x900/?thai-massage,spa') center/cover no-repeat;
             height: 100vh;
+            min-height: 620px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 820px;
+            padding: 2rem;
+        }
+        
+        .hero-logo {
+            max-height: 110px;
+            width: auto;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.6rem;
+            margin-bottom: 0.8rem;
+            text-shadow: 0 3px 12px rgba(0,0,0,0.7);
+        }
+        
+        .hero .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 2.8rem;
+            opacity: 0.95;
+        }
+        
+        .hero .green-btn {
+            background: #2e7d32;
+            color: white;
+            padding: 18px 48px;
+            font-size: 1.35rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            transition: all 0.3s;
+        }
+        
+        .hero .green-btn:hover {
+            background: #1b5e20;
+            transform: translateY(-5px);
         }
         
         section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
-        
         h2 { text-align: center; font-size: 2.8rem; margin-bottom: 3rem; color: var(--dark); }
         
         .services-grid {
@@ -127,10 +168,7 @@
             cursor: pointer;
             margin-top: 2rem;
             width: 100%;
-            transition: all 0.3s;
         }
-        
-        .submit-btn:hover { background: #1b5e20; }
         
         .contact { background: var(--dark); color: white; }
         
@@ -143,8 +181,9 @@
         }
         
         @media (max-width: 768px) {
-            .nav-links { gap: 1rem; font-size: 0.95rem; }
-            .hero h1 { font-size: 2.6rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero .tagline { font-size: 1.2rem; }
+            .hero .green-btn { padding: 16px 36px; font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -167,12 +206,17 @@
         </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION - No overlapping -->
     <section id="home" class="hero">
-        <div style="max-width:800px; padding:2rem;">
+        <div class="hero-content">
+            <!-- Your logo -->
+            <img src="logo.png" alt="Montra Thai Massage Logo" class="hero-logo">
+            
             <h1>Montra Thai Massage</h1>
-            <p>Authentic Thai & Therapeutic Massage in Houston, TX</p>
-            <a href="#book" class="book-btn" style="font-size:1.25rem; padding:16px 36px;">Book Your Session Now</a>
+            <p class="tagline">Authentic Thai & Therapeutic Massage in Houston, TX</p>
+            
+            <!-- Green button from your image -->
+            <a href="#book" class="green-btn">Book Your Session Now</a>
         </div>
     </section>
 
@@ -224,7 +268,7 @@
         </div>
     </section>
 
-    <!-- BOOKING SECTION (using your endpoint) -->
+    <!-- BOOKING SECTION -->
     <section id="book" style="background:#f8f5f0;">
         <h2>Book Your Appointment</h2>
         
@@ -270,7 +314,7 @@
                 </select>
 
                 <label>Special Requests or Notes (optional)</label>
-                <textarea name="notes" rows="4" placeholder="e.g. therapist gender preference, focus areas, allergies, etc."></textarea>
+                <textarea name="notes" rows="4" placeholder="e.g. therapist gender preference, focus areas, etc."></textarea>
 
                 <button type="submit" class="submit-btn">Submit Booking Request</button>
             </form>
