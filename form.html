@@ -43,34 +43,32 @@
             </select><br>
             <label for="start_date">Starting Date:</label>
             <input type="date" name="start_date" id="start_date" required><br>
-            <label for="tickets">Tickets:</label>
+            <label for="tickets">Tickets for Guests:</label>
             <input type="number" name="tickets" id="tickets" min="1" max="4" value="2" required><br>
         </fieldset>
 
         <fieldset>
             <legend>How Did You Hear About Us?</legend>
-            <input type="checkbox" name="source" id="web" value="web">
-            <label for="web">Website</label><br>
-            <input type="checkbox" name="source" id="friend" value="friend">
-            <label for="friend">Friend / Colleague</label><br>
+            <input type="checkbox" name="source" id="search" value="search">
+            <label for="search">Search engine</label><br>
             <input type="checkbox" name="source" id="social" value="social">
-            <label for="social">Social Media</label><br>
-            <input type="checkbox" name="source" id="event" value="event">
-            <label for="event">Event / Presentation</label><br>
-            <input type="checkbox" name="source" id="other" value="other">
-            <label for="other">Other</label><br>
+            <label for="social">Social media</label><br>
+            <input type="checkbox" name="source" id="email" value="email">
+            <label for="email">Email</label><br>
+            <input type="checkbox" name="source" id="friend" value="friend">
+            <label for="friend">Friend or colleague</label><br>
         </fieldset>
 
         <fieldset>
             <legend>Comments</legend>
             <label for="comments">Additional Comments:</label><br>
-            <textarea name="comments" id="comments"></textarea>
+            <textarea name="comments" id="comments" placeholder="If you have any comments, please enter them here."></textarea>
         </fieldset>
 
         <fieldset id="buttons">
             <legend>Submit Your Membership</legend>
-            <input type="submit" value="Submit Application">
-            <input type="reset" value="Reset Form">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Fields">
         </fieldset>
 
     </form>
