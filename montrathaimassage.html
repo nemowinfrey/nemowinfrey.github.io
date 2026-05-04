@@ -108,6 +108,18 @@
         
         .price { font-size: 1.35rem; font-weight: bold; color: var(--primary); }
         .contact { background: var(--dark); color: white; }
+
+        /* New styles for the improved Cupping Card */
+        .cupping-card .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted #ddd;
+            padding-bottom: 5px;
+        }
+        .cupping-card .price { font-size: 1.1rem; }
         
         footer {
             background: #111;
@@ -187,15 +199,34 @@
                 <p>120 min (2 hours) — <span class="price">$300</span></p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card cupping-card">
                 <h3>Cupping Packages</h3>
-                <p style="color:#d32f2f; font-weight:bold;">NEW — Coming Soon</p>
-                <p>30 Minutes Cupping (Lower Back) — <span class="price">$40</span></p>
-                <p>30 Minutes Cupping (Back, Shoulder, Neck) — <span class="price">$50</span></p>
-                <p>60 Min Full Body Cupping — <span class="price">$75</span></p>
-                <p>1 Hour Massage + Cupping Combo — <span class="price">$110</span></p>
-                <p>90 Minutes Massage + Cupping Combo — <span class="price">$150</span></p>
-                <p>2 Hour Massage + Cupping Combo — <span class="price">$180</span></p>
+                <p style="color:#d32f2f; font-weight:bold; margin-bottom: 15px;">NEW — Coming Soon</p>
+                
+                <div class="service-item">
+                    <span>30 Min Cupping (Lower Back)</span>
+                    <span class="price">$40</span>
+                </div>
+                <div class="service-item">
+                    <span>30 Min (Back, Shoulder, Neck)</span>
+                    <span class="price">$50</span>
+                </div>
+                <div class="service-item">
+                    <span>60 Min Full Body Cupping</span>
+                    <span class="price">$75</span>
+                </div>
+                <div class="service-item">
+                    <span>1 Hr Massage + Cupping Combo</span>
+                    <span class="price">$110</span>
+                </div>
+                <div class="service-item">
+                    <span>90 Min Massage + Cupping Combo</span>
+                    <span class="price">$150</span>
+                </div>
+                <div class="service-item">
+                    <span>2 Hr Massage + Cupping Combo</span>
+                    <span class="price">$180</span>
+                </div>
             </div>
         </div>
     </section>
