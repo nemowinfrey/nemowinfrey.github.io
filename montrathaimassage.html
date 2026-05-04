@@ -108,8 +108,8 @@
         }
         
         .price { font-size: 1.35rem; font-weight: bold; color: var(--primary); }
-        .coming-soon { color: #d32f2f; font-weight: bold; margin-top: 10px; }
-        
+        .coming-soon { color: #d32f2f; font-weight: bold; }
+
         .booking-form {
             background: white;
             padding: 2rem;
@@ -144,7 +144,17 @@
             margin-top: 2rem;
             width: 100%;
         }
-        
+
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
         .contact { background: var(--dark); color: white; }
         
         footer {
@@ -205,14 +215,12 @@
         <h2>Services & Prices</h2>
         <div class="services-grid">
 
-            <!-- Regular Massage -->
             <div class="service-card">
                 <h3>Regular Massage (Oil)</h3>
                 <p>40 Minutes</p>
                 <div class="price">$60</div>
             </div>
 
-            <!-- Thai / Swedish etc. -->
             <div class="service-card">
                 <h3>Thai • Swedish • Combo • Deep Tissue • Prenatal</h3>
                 <p>60 min (1 hour) — <span class="price">$80</span></p>
@@ -220,7 +228,6 @@
                 <p>120 min (2 hours) — <span class="price">$150</span></p>
             </div>
 
-            <!-- Couples Massage -->
             <div class="service-card">
                 <h3>Couples Massage</h3>
                 <p>60 min (1 hour) — <span class="price">$150</span></p>
@@ -228,7 +235,6 @@
                 <p>120 min (2 hours) — <span class="price">$300</span></p>
             </div>
 
-            <!-- New Cupping Packages -->
             <div class="service-card">
                 <h3>Cupping Packages</h3>
                 <p style="color:#d32f2f; font-weight:bold;">NEW — Coming Soon</p>
@@ -239,7 +245,6 @@
                 <p>90 Minutes Massage + Cupping Combo — <span class="price">$150</span></p>
                 <p>2 Hour Massage + Cupping Combo — <span class="price">$180</span></p>
             </div>
-
         </div>
 
         <p style="text-align:center; margin-top:2rem; color:#d32f2f; font-weight:600;">
@@ -247,11 +252,11 @@
         </p>
     </section>
 
-    <!-- BOOKING SECTION -->
+    <!-- BOOKING SECTION - Enhanced with success message -->
     <section id="book" style="background:#f8f5f0;">
         <h2>Book Your Appointment</h2>
         <div class="booking-form">
-            <form action="https://formspree.io/f/mpqkkrdw" method="POST">
+            <form id="bookingForm" action="https://formspree.io/f/mpqkkrdw" method="POST">
                 <label>Full Name *</label>
                 <input type="text" name="name" required>
 
@@ -271,8 +276,6 @@
                     <option value="Couples Massage - 60 min ($150)">Couples Massage - 60 min ($150)</option>
                     <option value="Couples Massage - 90 min ($240)">Couples Massage - 90 min ($240)</option>
                     <option value="Couples Massage - 120 min ($300)">Couples Massage - 120 min ($300)</option>
-                    
-                    <!-- Coming Soon Options (Visible but Disabled) -->
                     <option value="" disabled>────────── Coming Soon ──────────</option>
                     <option value="30 Min Cupping (Lower Back) - $40" disabled>30 Min Cupping (Lower Back) - $40</option>
                     <option value="30 Min Cupping (Back, Shoulder, Neck) - $50" disabled>30 Min Cupping (Back, Shoulder, Neck) - $50</option>
@@ -305,6 +308,12 @@
 
                 <button type="submit" class="submit-btn">Submit Booking Request</button>
             </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message">
+                ✅ Thank you! Your booking request has been sent successfully.<br>
+                We will confirm your appointment shortly at <strong>nemo.stay.ballin@gmail.com</strong>.
+            </div>
         </div>
     </section>
 
@@ -328,6 +337,16 @@
     <footer>
         <p>&copy; 2026 Montra Thai Massage • Houston, Texas</p>
     </footer>
+
+    <script>
+        // Simple success message after form submission
+        document.getElementById('bookingForm').addEventListener('submit', function() {
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('bookingForm').reset();
+            }, 800);
+        });
+    </script>
 
 </body>
 </html>
